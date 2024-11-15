@@ -70,6 +70,79 @@
           </p>
           <!-- mb-5 gives extra margin spacing under lead text -->
           <p class="lead mb-5">Let's create something amazing together!</p>
+          <!-- Button trigger modal -->
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Subscribe to my newsletter!
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Subscribe
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <form class="text-start container">
+                    <div class="row">
+                      <div>
+                        <p class="text-start">
+                          Join my newsletter for the latest updates on my
+                          projects, coding tips, and industry insights delivered
+                          straight to your inbox.
+                        </p>
+                      </div>
+                      <div class="mb-3 text-start col-md-6">
+                        <label for="exampleInputName" class="form-label"
+                          >Name</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="exampleInputName"
+                          aria-describedby="Name"
+                        />
+                      </div>
+                      <div class="mb-3 text-start col-md-6">
+                        <label for="exampleInputEmail" class="form-label"
+                          >Email</label
+                        >
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="exampleInputEmail"
+                        />
+                      </div>
+                      <div>
+                        <button type="submit" class="btn btn-primary">
+                          Sign up!
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </header>
@@ -203,9 +276,9 @@
     <!-- footer Section with Form contact-->
     <footer id="contact" class="container">
       <div class="row justify-content-center">
-        <div class="col-12 text-center my-4">
+        <div class="col-12 col-md-10 col-lg-8 text-center my-4">
           <h2 class="display-5">Contact</h2>
-          <p class="mt-4">
+          <p class="mt-4 text-start">
             Got questions or ideas? I'd love to hear from you! Whether you're
             interested in collaboration, have inquiries about my projects, or
             wish to request a copy of my CV, please don't hesitate to get in
@@ -213,7 +286,53 @@
             can work together to create something amazing!
           </p>
         </div>
-        <div class="col-12 col-md-10 col-lg-8">add your form here</div>
+        <div class="col-12 col-md-10 col-lg-8">
+          <form class="mb-5 container">
+            <div class="row">
+              <div class="mb-3 col-md-6 col-lg-4">
+                <label for="exampleInputFullName" class="form-label"
+                  >Full name</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputFullName"
+                  aria-describedby="full name"
+                />
+              </div>
+              <div class="mb-3 col-md-6 col-lg-4">
+                <label for="exampleInputEmail1" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="Email Address"
+                />
+              </div>
+              <div class="mb-3 col-lg-4">
+                <label for="exampleInputPhoneNumber" class="form-label"
+                  >Phone number</label
+                >
+                <input
+                  type="number"
+                  class="form-control"
+                  id="exampleInputPhoneNumber"
+                />
+              </div>
+              <div class="mb-3 col-12">
+                <label for="exampleInputMessage" class="form-label"
+                  >Message</label
+                >
+                <textarea
+                  rows="4"
+                  class="form-control"
+                  id="exampleInputMessage"
+                ></textarea>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
+          </form>
+        </div>
       </div>
     </footer>
     <script
