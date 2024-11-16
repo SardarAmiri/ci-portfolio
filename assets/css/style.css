@@ -43,4 +43,11 @@ h1, h2 {
 .sharp-corners * {
     border-radius: 0%;
 }
-
+.changeBtnBgColor {
+    background-color: #1f7798;
+    border: #1f7798;
+}
+.changeBtnBgColorOnHover:hover {
+    background-color: #1d6d8a;
+    border: #1d6d8a;
+}
