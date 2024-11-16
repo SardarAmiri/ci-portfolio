@@ -33,3 +33,10 @@ h1, h2 {
     padding: 5% 7%;
     min-height: 500px;
 }
+#portfolio .card-title {
+    font-size: 1.2rem;
+    color: #1f7798;
+}
+#portfolio .btn:hover {
+    background-color: #1f7798;
+}
