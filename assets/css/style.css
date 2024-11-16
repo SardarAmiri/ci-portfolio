@@ -40,3 +40,7 @@ h1, h2 {
 #portfolio .btn:hover {
     background-color: #1f7798;
 }
+.sharp-corners * {
+    border-radius: 0%;
+}
+
